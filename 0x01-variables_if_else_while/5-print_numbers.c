@@ -3,7 +3,7 @@
 /**
 * main - Entry point
 *
-* description: print 1 to 9
+* description: print 0 to 9
 *
 * Return: 0 (Success)
 *
@@ -12,7 +12,7 @@
 int main(void)
 {
 int a;
-for (a = 1 ; a < 10 ; a++)
-printf("%d\n". a);
+for (a = 0 ; a < 10 ; a++)
+printf("%d\n", a);
 return (0);
 }
