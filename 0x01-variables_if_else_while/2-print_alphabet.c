@@ -12,11 +12,11 @@
 int main(void)
 {
 char a = 'a';
-while (a <= z)
+while (a <= 'z')
 {
-putcher(a);
+putchar(a);
 a++;
 }
-puthcher('\n')
+putchar('\n')
 return (0);
-}
+
