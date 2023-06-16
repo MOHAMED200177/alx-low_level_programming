@@ -3,7 +3,7 @@
 /**
 * main - Entry point
 *
-* description: print 0 to 9
+* description: print a to z
 *
 * Return: 0 (Success)
 *
@@ -11,9 +11,12 @@
 
 int main(void)
 {
-int a;
-for (a = 0 ; a < 10 ; a++)
-putchar("%d", a);
-putchar("\n");
+int a = 0;
+while (a < 10)
+{
+putchar(a + '0');
+a++;
+}
+putchar('\n');
 return (0);
 }
