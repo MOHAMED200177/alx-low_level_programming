@@ -16,7 +16,7 @@ _putchar ((h % 10) + 48);
 _putchar (':');
 _putchar ((m / 10) + 48);
 _putchar ((m % 10) + 48);
-_putcihar ('\n');
+_putchar ('\n');
 }
 }
 }
