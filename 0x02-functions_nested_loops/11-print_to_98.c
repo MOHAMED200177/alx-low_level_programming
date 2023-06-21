@@ -1,10 +1,10 @@
 #include "main.h"
 
-
 /**
-* 
-* print_to_98 - prints all natural numbers
-*from n to 98
+* print_to_98 - print from n to 98 counts
+* separated by a comma,
+* followed by a space and Numbers
+* should be printed in order
 *
 * @n: input
 *
