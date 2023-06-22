@@ -3,9 +3,9 @@
 
 /**
 * mul -  multiplies two integers.
-* @c: first input 
-* @c: second input 
-* Return: Returns result
+* @a: first input
+* @b: second input
+* Return: Return results
 */
 
 int mul(int a, int b)
