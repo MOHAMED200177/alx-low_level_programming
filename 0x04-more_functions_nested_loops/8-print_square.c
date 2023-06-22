@@ -7,14 +7,20 @@
 * Return: always 0 (success)
 */
 
-void print_square(int size);
+void print_square(int size)
 {
-int r;
-int c;
-for (r = 1; r <= size; r++)
+int i, j;
+if (size <= 0)
 {
-for (c = 1; c <= size; c++)
-_putchar (35);
-_putchar ('\n');
+putchar('\n');
+return;
+}
+for (i = 0; i < size; i++)
+{
+for (j = 0; j < size; j++)
+{
+putchar('#');
+}
+putchar('\n');
 }
 }
