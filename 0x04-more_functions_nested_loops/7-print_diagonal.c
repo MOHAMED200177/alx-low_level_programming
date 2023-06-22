@@ -18,7 +18,7 @@ for (a = 1; a <= n; a++)
 {
 for (c = 1; c <= a; c++)
 _putchar (' ');
-_putchar (92);
+_putchar (92);/*is equal to '/' char*/
 _putchar ('\n');
 }
 }
