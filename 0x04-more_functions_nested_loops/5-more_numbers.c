@@ -23,8 +23,8 @@ if (n > 9)
 _putchar (1 + 48);
 v = n % 10;
 }
-_putchar (v);
-}
+_putchar (v + 48);
 }
 _putchar ('\n');
+}
 }
