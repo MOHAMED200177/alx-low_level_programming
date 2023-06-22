@@ -9,12 +9,10 @@
 
 void print_triangle(int size)
 {
-int i. j;
+int i;
+int j;
 if (size <= 0)
-{
 putchar('\n');
-return;
-}
 else
 {
 for (i = 1; i <= size; i++)
