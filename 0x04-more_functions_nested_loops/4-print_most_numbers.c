@@ -15,7 +15,7 @@ int a = 0;
 for (a = 0; a < 10; a++)
 {
 if (a == 2 || a == 4)
-continie;
+a++;
 _putchar (a + 48);
 }
 _putchar ('\n');
