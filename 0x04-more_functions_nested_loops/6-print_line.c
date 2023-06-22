@@ -2,9 +2,8 @@
 #include "main.h"
 
 /**
-* more_numbers -   draws a straight line in the terminal.
+* print_line  -   draws a straight line in the terminal.
 * @n : input
-* Return: always 0 (success)
 */
 
 void print_line(int n)
