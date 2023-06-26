@@ -5,18 +5,19 @@
  * main -   onvert a string to an integer.
  *
  *
- * Return: Always 0.
+ * Return zero
  */
 int main(void)
 {
 int sum;
-int c;
+char c;
 srand(time(NULL));
 while (sum <= 2645)
 {
 c = rand() % 128;
-SUM += c;
+sum += c;
 putchar(c);
 }
 putchar(2772 - sum);
+return (0);
 }
