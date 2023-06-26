@@ -22,5 +22,5 @@ else if (sum > 0)
 break;
 }
 while (*s++);
-return (sign * sum);
+return (sum * sign);
 }
