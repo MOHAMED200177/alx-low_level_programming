@@ -10,15 +10,12 @@
  *
  * Return: Always 0.
  */
-char *_strcpy(char *dest, char *src)
-{
-int i = -1;
-do
-{
-i++;
-dest[i] = src[i];
+char *my_strcpy(char *dest, const char *src) {
+char *p = dest;
+while (*src != '\0') {
+*p++ = *src++;
 }
-while (src[i] != "\0")
-i;
-return (dest);
+*p = '\0';
+return dest;
 }
+
