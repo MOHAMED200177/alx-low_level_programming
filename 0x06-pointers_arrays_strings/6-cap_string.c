@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * isLower - reverses the content of an array of integers.
- *@c: input
+ * isLower - check lowercase
+ *@c: character
  * Return: 1 if true , 0 if false
  */
 
@@ -14,8 +14,8 @@ return (c >= 97 && c <= 122);
 
 
 /**
- * isDelimiters - reverses the content of an array of integers.
- *@c: input
+ * isDelimiters - check delimiter
+ *@c: character
  *Return: 1 if true , 0 if false
  */
 char isDelimiters(char c)
