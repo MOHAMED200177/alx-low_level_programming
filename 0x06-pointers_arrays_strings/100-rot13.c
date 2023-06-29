@@ -3,8 +3,8 @@
 
 /**
  * rot13 - Write a function that encodes a string using rot13.
- *@s: input
- * Return: Always 0.
+ *@s: input string
+ * Return: encoded string.
  */
 char *rot13(char *s)
 {
