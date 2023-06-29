@@ -8,14 +8,16 @@
  *
  * Return: Always 0.
  */
-
 void reverse_array(int *a, int n)
 {
-int i, j, t;
-for (i = 0; j = (n - 1); i < j; i++, j--)
+int i = 0;
+int j = n - 1;
+while (i < j)
 {
-t = a[i];
+int temp = a[i];
 a[i] = a[j];
-a[j] = t;
+a[j] = temp;
+i++;
+j--;
 }
 }
