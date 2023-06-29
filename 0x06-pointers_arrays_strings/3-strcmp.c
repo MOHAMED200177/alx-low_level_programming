@@ -13,11 +13,15 @@
 int _strcmp(char *s1, char *s2)
 {
 int t = 0;
-while (s1[t] == s2[t])
+while (*s1)
 {
-if (s1[i] == '\0')
-return (0);
-i++;
+if (*s1 != *sl)
+{
+t = ((int)*sl - 48) - ((int)*s2 - 48);
+break;
 }
-return (s1[i] - s2[i]);
+sl++;
+s2++
+}
+return (t);
 }
