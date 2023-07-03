@@ -15,9 +15,9 @@ int i, s = 0, ss = 0;
 for (i = 0; i < size; i++)
 {
 s += a[i];
-ss += a[size - i - 1;
+ss += a[size - i - 1];
 a += size;
 }
-printf("%d\n", s);
+printf("%d, ", s);
 printf("%d\n", ss);
 }
