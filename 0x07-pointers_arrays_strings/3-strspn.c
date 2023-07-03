@@ -13,14 +13,9 @@ int i;
 int l;
 for (i = o; s[i] != '\0'; i++)
 {
-for (l = o; accept[l] != '\0'; l++)
+for (l = o; accept[l] != s[i]; l++)
 {
-if (s[i] == accept[l])
-{
-break;
-}
-}
-if (s[i] == '\0')
+if (accept[l] == '\0')
 {
 return (i);
 }
