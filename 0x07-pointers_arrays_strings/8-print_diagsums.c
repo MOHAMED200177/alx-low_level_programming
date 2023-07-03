@@ -17,6 +17,6 @@ for (i = 0; i < size; i++)
 s += *(a + i * size + i);
 ss += *(a + i * size + (size - i - 1));
 }
-printf("Sum of diagonal 1: %d\n", s);
-printf("Sum of diagonal 2: %d\n", ss);
+printf("%d\n", s);
+printf("%d\n", ss);
 }
