@@ -9,17 +9,13 @@
  *
  * Return: Always 0.
  */
-
 int _strcmp(char *s1, char *s2)
 {
-int t = 0;
-while (*s1)
+int i;
+for (i = 0; s1 != '\0' && s1 != '\0'; i++)
 {
-if (*s2 != *s1)
-t = ((int)*sl - 48) - ((int)*s2 - 48);
-break;
-sl++;
-s2++;
+if (s1[i] != s2[i])
+return (s1[i] - s2[i]);
 }
-return (t);
+return (0);
 }
