@@ -13,26 +13,37 @@
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-int i, j, k, l1 = 0, l2 = 0, sum = 0;
-char tmp;
-while (n1[l1])
-l1++;
-while (n2[l2])
-l2++;
-if (l1 > size_r || l2 > size_r)
-return (0);
-for (i = l1 - 1, j = l2 - 1, k = 0; i >= 0 || j >= 0 || sum; i--, j--, k++)
+int i = 0;
+int j = 0;
+int k = 0;
+int l1 = strlen(n1);
+int l2 = strlen(n2);
+int sum = 0;
+int carry = 0;
+
+for (i = l1 - 1, j = l2 - 1; i >= 0 || j >= 0 || carry; i--, j--, k++)
 {
-sum += (i >= 0 ? n1[i] - '0' : 0) + (j >= 0 ? n2[j] - '0' : 0);
-r[k] = sum % 10 + '0';
-sum /= 10;
+sum = carry;
+
+if (i >= 0)
+sum += n1[i] - '0';
+if (j >= 0)
+sum += n2[j] - '0';
+
+carry = sum / 10;
+r[k] = (sum % 10) + '0';
 }
+
+if (k > size_r)
+return (0);
+
 r[k] = '\0';
+
 for (i = 0; i < k / 2; i++)
 {
+char tmp;
+
 tmp = r[i];
 r[i] = r[k - i - 1];
 r[k - i - 1] = tmp;
-}
-return (r);
 }
