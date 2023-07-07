@@ -1,10 +1,14 @@
 #include<unistd.h>
 
  /**
-  * main - Entry point
+  * main - ENTRY POINT
   *
-  * description:print a qoute using write function
-  *	ssize_t write(int fd, const void *buf, size_t count)
+  * description:This is a C program that prints a string to the standard output
+  * . The string is stored in the qou array and contains a quote from Dora Korpar.
+  *  The program uses the write function to write the contents of
+  *   the qou array to the standard output. The strlen function is
+  *   used to determine the length of the string in the qou array.
+  *	
   *
   *Return: 1 (error)
  */
