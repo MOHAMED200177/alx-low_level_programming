@@ -4,9 +4,9 @@
 #include <string.h>
 
 /**
- * str_concat -   concatenates two strings.
- *@s1: input
- *@s2: input
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers.
+ *@width: input
+ *@height: input
  * Return: Always 0.
  */
 
@@ -44,4 +44,5 @@ for (j = 0; j < width; j++)
 grid[i][j] = 0;
 }
 }
-
+return (grid);
+}
