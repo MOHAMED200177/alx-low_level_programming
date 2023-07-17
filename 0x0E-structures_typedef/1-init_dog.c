@@ -1,11 +1,11 @@
-#include <dog.h>
+#include "dog.h"
 /**
-* init_dog dog - initialize a variable of type struct dog
+* init_dog - initialize a struct dog
 *@d : input
 *@name : dogs name
 *@age : dogs age
 *@owner : owner name
-* Return: always 0 (success)
+* Return: void
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
