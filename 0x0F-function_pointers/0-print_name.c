@@ -10,7 +10,7 @@
  *
 * Return: always 0 (success)
  */
-#include <stdio.h>
+
 
 void print_name(char *name, void (*f)(char *))
 {
@@ -28,4 +28,3 @@ char name[] = "John Doe";
 print_name(name, print);
 return (0);
 }
-
