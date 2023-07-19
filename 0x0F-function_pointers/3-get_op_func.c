@@ -19,7 +19,6 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i = 0;
-
 while (i < 5)
 {
 if (s && s[0] == ops[i].op[0] && !s[1])
