@@ -14,17 +14,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+if (name && f)
 f(name);
-}
-
-void print(char *name)
-{
-printf("%s\n", name);
-}
-
-int main()
-{
-char name[] = "John Doe";
-print_name(name, print);
-return (0);
 }
