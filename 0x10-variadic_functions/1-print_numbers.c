@@ -10,11 +10,11 @@
  * @separator: string to check length of
  * @n: string to check length of
  *
- * Return: 0 
+ * Return: 0
  */
 
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+ivoid print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list args;
 unsigned int i;
