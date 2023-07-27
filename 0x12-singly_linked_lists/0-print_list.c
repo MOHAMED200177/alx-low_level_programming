@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * print_list - prints a linked lists
  * @h: pointer to first node
