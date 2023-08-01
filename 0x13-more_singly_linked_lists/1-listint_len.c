@@ -6,15 +6,15 @@
  *
  * Return: size of list
  */
-
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
-size_t a = 0;
+size_t i = 0;
 
-while (h != NULL)
+while (h)
+{
 h = h->next;
-a++;
+i++;
+}
+return (i);
 }
 
-return (a);
-}
