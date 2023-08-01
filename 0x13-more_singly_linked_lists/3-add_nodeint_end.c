@@ -22,9 +22,9 @@ if (!*head)
 *head = newNode;
 else
 {
-temp =*head;
+temp = *head;
 while (temp->next)
-temp =temp->next;
+temp = temp->next;
 temp->next = newNode;
 }
 return (newNode);
