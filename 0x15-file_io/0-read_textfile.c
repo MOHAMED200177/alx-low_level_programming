@@ -7,33 +7,19 @@
  *
  * Return: number bytes read/printed
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-FILE *fp;
-char *buffer;
-ssize_t read_count;
+int fd;
+ssize_t bytes;
+char buf[READ_BUF_SIZE * 8];
 
-if (filename == NULL)
+if (!filename || !letters)
 return (0);
-
-fp = fopen(filename, "r");
-if (fp == NULL)
+fd = open(filename, O_RDONLY);
+if (fd == -1)
 return (0);
-
-buffer = malloc(sizeof(char) * letters);
-if (buffer == NULL)
-return (0);
-
-read_count = fread(buffer, sizeof(char), letters, fp);
-if (read_count == 0)
-return (0);
-
-write(STDOUT_FILENO, buffer, read_count);
-
-free(buffer);
-fclose(fp);
-
-return (read_count);
+bytes = read(fd, &buf[0], letters);
+bytes = write(STDOUT_FILENO, &buf[0], bytes);
+close(fd);
+return (bytes);
 }
-
