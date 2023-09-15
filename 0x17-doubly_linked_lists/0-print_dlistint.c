@@ -19,4 +19,8 @@ size_t print_dlistint(const dlistint_t *h)
 		i++;
 	}
 	return (i);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b3c13837296d0f76d35ef1a3e4d0d6f9054a175d
