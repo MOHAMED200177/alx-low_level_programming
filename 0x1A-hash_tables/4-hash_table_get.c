@@ -1,35 +1,32 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - get value of a key in a hash table
+ * hash_table_get - retrieves a value associated with a key.
+ * @ht: a pointer to the hash table array.
+ * @key: the key, a string that cannot be empty.
  *
- * @ht: pointer to the hash table
- * @key: key of the node to update
- *
- * Return: string value on success, NULL on failure
+ * Return: the value associated with the key, or NULL if key can't be found.
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int k_index;
-	hash_node_t *current;
-	/*check validation*/
-	if (ht == NULL || key == NULL || key[0] == '\0' || ht->size == 0)
+	unsigned long int index;
+	hash_node_t *node;
+
+	if (ht == NULL)
 		return (NULL);
-
-	/*get index*/
-	k_index = key_index((unsigned char *)key, ht->size);
-
-	if (ht->array[k_index] == NULL)
+	if (key == NULL)
 		return (NULL);
-	current = ht->array[k_index];
-
-	while (current)
+	index = key_index((unsigned char *)key, ht->size);
+	if (ht->array[index] == NULL)
+		return (NULL);
+	if (strcmp(ht->array[index]->key, key) == 0)
+		return (ht->array[index]->value);
+	node = ht->array[index];
+	while (node != NULL)
 	{
-		if (strcmp(current->key, key) == 0)
-
-			return (current->value);
-
-		current = current->next;
+		if (strcmp(node->key, key) == 0)
+			return (node->value);
+		node = node->next;
 	}
 	return (NULL);
 }
